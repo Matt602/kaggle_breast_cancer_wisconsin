@@ -5,7 +5,7 @@ Created on Tue Nov  2 16:09:27 2021
 """
 
 import requests
-from data_input import data_in
+from data_input1 import data_in
 
 URL = 'http://127.0.0.1:5000/predict'
 headers = {"Content-Type": "application/json"}
