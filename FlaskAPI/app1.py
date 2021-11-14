@@ -1,7 +1,7 @@
 import flask
 from flask import Flask, jsonify, request
 import json
-from data_input import data_in
+from data_input1 import data_in
 import numpy as np
 import pickle
 
@@ -32,7 +32,7 @@ def predict():
     # load model
     model = load_models()
     prediction = model.predict(x_in)[0]
-    response = json.dumps({'response': prediction})
+    response = json.dumps({'response': float(prediction)})
     return response, 200
 
 
